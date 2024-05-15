@@ -1,0 +1,60 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.name {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.navbarMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgb(4, 4, 4); */
+  color: rgb(223, 223, 223);
+  /* border-bottom: 1px solid grey; */
+  padding: 8px 20px;
+}
+
+.rightnav,
+.leftnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.51vw;
+}
+
+.verticalLine {
+  margin-right: 1vw;
+}
+
+.leftnav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+  .name {
+    display: none;
+  }
+
+  #searchBar {
+    width: 10px;
+  }
+
+}

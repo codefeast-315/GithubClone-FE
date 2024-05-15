@@ -1,0 +1,21 @@
+.AvatarImage {
+  /* margin-left: 10px; */
+}
+
+
+.settings-wrapper {
+  display: flex;
+}
+
+.settings-wrapper p {
+  color: gray;
+}
+
+.left-menu {
+  width: 350px;
+  margin: 20px;
+}
+
+.avatar-sidebar-title {
+  margin-left: 10px;
+}

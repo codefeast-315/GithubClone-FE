@@ -1,0 +1,22 @@
+.upload-file-section {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 90%;
+    margin: 30px auto;
+    border: 0.5px solid #ccc;
+    border-radius: 10px;
+}
+
+.file-input {
+    display: none;
+}
+
+.add-file-text {
+    margin: 30px 30px;
+}

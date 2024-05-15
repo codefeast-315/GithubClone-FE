@@ -1,0 +1,65 @@
+.add-issue-left-section {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.issue-input {
+    width: 100%;
+}
+
+.issue-input h3 {
+    margin-bottom: 10px;
+}
+
+.Submit-issue {
+    margin-top: 60px;
+    background-color: #228736 !important;
+    color: whitesmoke !important;
+}
+
+.text-input-addIssue {
+    width: 700px;
+}
+
+@media screen and (max-width: 1100px) {
+    .issue-detail-left {
+        margin-left: 64px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .text-input-addIssue {
+        width: 100%;
+        min-width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text-input-addIssue {
+        width: 100%;
+        min-width: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text-input-addIssue {
+        width: 100%;
+        min-width: 300px;
+    }
+
+    .Submit-issue {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .text-input-addIssue {
+        width: 100%;
+        min-width: 150px;
+    }
+
+    .Submit-issue {
+        margin-top: 100px;
+    }
+}

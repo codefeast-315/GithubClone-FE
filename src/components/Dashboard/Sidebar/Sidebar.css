@@ -1,0 +1,115 @@
+/* Sidebar.css */
+.side-bar {
+  height: 100vh;
+  width: 300px;
+  background-color: #0c1116;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  color: #e0e0e0;
+}
+
+.title {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.side-bar-options {
+  width: 100%;
+  height: calc(100% - 70px);
+  /* Adjusted to account for the title and its margin */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* Align items to the start to mimic GitHub's sidebar */
+  gap: 20px;
+  font-size: 16px;
+  /* Adjusted for better readability */
+  font-weight: 500;
+}
+
+.upper-options,
+.lower-options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-bar ul li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 30px;
+  cursor: pointer;
+  transition: font-weight 0.2s ease;
+}
+
+.side-bar ul li:hover {
+  font-weight: 700;
+}
+
+.scribble:hover {
+  cursor: pointer;
+}
+
+.pdf-view-btn {
+  width: 100px;
+  height: 40px;
+  margin: 5px 0;
+  border-radius: 12px;
+  background-color: #e0e0e0;
+  color: black;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pdf-view-btn:hover {
+  background-color: #d4d4d4;
+}
+
+/* Sidebar.css */
+.side-bar ul li {
+  display: flex;
+  align-items: center;
+  /* Align items vertically in the center */
+  gap: 10px;
+  /* Add space between the icon and text */
+  padding: 10px 5px;
+  /* Add padding to the top and bottom of each list item */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.side-bar ul li:hover {
+  background-color: #676767;
+  /* Add a hover effect to indicate interactivity */
+}
+
+/* Ensure icons are aligned with the text */
+.side-bar ul li svg {
+  height: 24px;
+  /* Adjust the size of the icons as needed */
+  width: 24px;
+  /* Adjust the size of the icons as needed */
+}
+
+/* Optional: Add some padding to the text for better spacing */
+.side-bar ul li span {
+  padding-left: 10px;
+  /* Adjust as needed */
+}

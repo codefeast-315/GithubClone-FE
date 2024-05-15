@@ -1,0 +1,78 @@
+.settings-wrapper {
+    display: flex;
+}
+
+.settings-wrapper p {
+    color: gray;
+}
+
+.left-menu {
+    width: 250px;
+    margin: 20px;
+}
+
+.right-settings {
+    margin: 20px;
+    /* background-color: blue; */
+    height: 100%;
+    width: 100%;
+}
+
+.btn {
+    background-color: #171b23;
+    border: 0.5px solid gray;
+    color: whitesmoke;
+    /* width: 100px; */
+    padding: 5px 15px;
+    margin: 10px;
+}
+
+.check-box-input {
+    display: flex;
+    gap: 10px;
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.check-box-input input {
+    background-color: black;
+}
+
+.check-box-input p {
+    color: gray;
+}
+
+
+.settings-box {
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.setting-option {
+    margin: 20px 0px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.settings-text-input {
+    width: 300px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .settings-wrapper {
+        margin: 0px 20px;
+        padding-right: 20px;
+        display: block;
+    }
+
+    .left-menu {
+        width: 100%;
+    }
+
+    .settings-text-input {
+        width: 200px;
+    }
+}

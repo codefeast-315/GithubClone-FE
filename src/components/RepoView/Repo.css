@@ -1,0 +1,145 @@
+.headerTable {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  background-color: rgba(128, 128, 128, 0.192);
+  padding: 15px;
+  padding-top: 10px;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 1px solid rgba(149, 149, 149, 0.677);
+}
+
+.headerTableLeft {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+}
+
+.rows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Aligns items vertically in the center */
+  padding: 1em;
+  height: 5vh;
+  background-color: rgba(17, 17, 17, 0.06);
+  border-bottom: 1px solid rgba(149, 149, 149, 0.677);
+  border-left: 1px solid rgba(149, 149, 149, 0.677);
+  border-right: 1px solid rgba(149, 149, 149, 0.677);
+  width: 100%;
+  margin: 0px;
+}
+
+.rows:hover {
+  cursor: pointer;
+  background-color: rgba(152, 152, 152, 0.103);
+}
+
+hr {
+  margin: 0px;
+  border-color: rgba(212, 210, 210, 0.738);
+}
+
+.leftTextBody,
+.centreTextBody,
+.rightTextBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.About {
+  height: fit-content;
+  padding: 2em 1em;
+}
+
+.AboutText {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.readmeIcon,
+.ActivityIcon,
+.StarIcon,
+.WatchIcon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.CountContri {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.Contributors {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  gap: 10px;
+  font-size: medium;
+}
+
+.iconLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  /* Inherit the color from the parent */
+}
+
+.iconLink:hover {
+  color: rgba(59, 129, 209, 0.783);
+  /* Change the color to blue on hover */
+}
+
+/* Optional: Add some spacing between the icon and the text */
+.iconLink>*:not(:last-child) {
+  margin-right: 5px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 36em; */
+  width: 90vw;
+}
+
+.headerTableRight:hover {
+  cursor: pointer;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.downloadButton {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 450px) {
+
+  .centreTextBody,
+  .latest-commit {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+
+  .About {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .header {
+    gap: 20px;
+  }
+}

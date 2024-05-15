@@ -1,0 +1,54 @@
+.code-editor-section {
+    margin: 30px;
+    /* border: 0.5px solid gray; */
+    border-radius: 10px;
+}
+
+.code-editor-heading {
+    margin: 10px 35px;
+}
+
+.code-btn-section,
+.code-editor-heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.code-btn-section .btn,
+.code-editor-heading .btn {
+    background-color: #171b23;
+    border: 0.5px solid gray;
+    color: whitesmoke;
+    /* width: 100px; */
+    padding: 5px 15px;
+    margin: 10px 10px 10px 0;
+}
+
+
+/* Example CSS to style the ActionMenu and its items */
+.spectrum-ActionMenu {
+    /* Styles for the ActionMenu container */
+    background-color: #171b23;
+}
+
+.spectrum-ActionMenu-button {
+    /* Styles for the ActionMenu button */
+    background-color: #171b23;
+}
+
+.spectrum-ActionMenu-overlay {
+    /* Styles for the ActionMenu overlay */
+    background-color: #171b23;
+}
+
+.spectrum-ActionList {
+    /* Styles for the ActionList container */
+    background-color: #171b23;
+}
+
+.spectrum-ActionList-item {
+    /* Styles for each ActionList item */
+    background-color: #171b23;
+}

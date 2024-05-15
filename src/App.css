@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #0c1017;
+}
+
+.App {
+  background-color: #0c1017;
+  color: rgb(224, 224, 224);
+}
+
+.line-break {
+  border-bottom: 1px solid gray;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
