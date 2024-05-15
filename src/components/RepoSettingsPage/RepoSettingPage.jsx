@@ -13,7 +13,7 @@ function RepoSettingPage() {
   const deleteRepo = async (repoId) => {
     try {
       const response = await fetch(
-        `https://backendgit-1.onrender.com/repos/${repositoryId}`,
+        `https://github-clone-be.vercel.app/repos/${repositoryId}`,
         {
           method: "DELETE",
         }

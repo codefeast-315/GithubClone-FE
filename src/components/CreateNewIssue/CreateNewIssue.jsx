@@ -25,7 +25,7 @@ function CreateNewIssue() {
     try {
       const description = localStorage.getItem("Description");
       const response = await axios.post(
-        `https://backendgit-1.onrender.com/repo/issue/${repositoryId}`,
+        `https://github-clone-be.vercel.app/repo/issue/${repositoryId}`,
         {
           title,
           description,

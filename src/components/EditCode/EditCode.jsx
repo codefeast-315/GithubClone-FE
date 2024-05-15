@@ -12,7 +12,7 @@ function EditCode() {
   const deleteFile = async () => {
     try {
       const response = await fetch(
-        `https://backendgit-1.onrender.com/repos/filechange/${repositoryId}`,
+        `https://github-clone-be.vercel.app/repos/filechange/${repositoryId}`,
         {
           method: "DELETE",
         }

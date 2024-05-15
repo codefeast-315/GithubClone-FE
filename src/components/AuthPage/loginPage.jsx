@@ -51,7 +51,7 @@ function LoginPage() {
         const googleId = userDetails.sub;
 
         const res = await axios.post(
-          "https://backendgit-1.onrender.com/oauth/google",
+          "https://github-clone-be.vercel.app/oauth/google",
           {
             googleId,
           }
@@ -78,7 +78,7 @@ function LoginPage() {
     e.preventDefault();
     try {
       setLoader(true);
-      const res = await axios.post("https://backendgit-1.onrender.com/login", {
+      const res = await axios.post("https://github-clone-be.vercel.app/login", {
         username,
         password,
       });

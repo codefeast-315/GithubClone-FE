@@ -59,7 +59,7 @@ function LoginPage() {
         const googleId = userDetails.sub;
 
         const res = await axios.post(
-          "https://backendgit-1.onrender.com/oauth/google/signup",
+          "https://github-clone-be.vercel.app/oauth/google/signup",
           {
             email,
             username,
@@ -89,7 +89,7 @@ function LoginPage() {
     e.preventDefault();
     try {
       setLoader(true);
-      const res = await axios.post("https://backendgit-1.onrender.com/signup", {
+      const res = await axios.post("https://github-clone-be.vercel.app/signup", {
         email: username,
         username: email,
         password,

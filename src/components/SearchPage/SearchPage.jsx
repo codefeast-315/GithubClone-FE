@@ -22,7 +22,7 @@ function SearchPage() {
         const fetchRepos = async () => {
             try {
                 const response = await axios.get(
-                    "https://backendgit-1.onrender.com/repos"
+                    "https://github-clone-be.vercel.app/repos"
                 );
                 setRepos(response.data); // Assuming the API returns an array of repositories
             } catch (error) {

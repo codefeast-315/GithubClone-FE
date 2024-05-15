@@ -16,7 +16,7 @@ function IssueDetails() {
     const fetchIssueDetails = async () => {
       try {
         const response = await axios.get(
-          `https://backendgit-1.onrender.com/repo/issue/${issueId}`
+          `https://github-clone-be.vercel.app/repo/issue/${issueId}`
         );
         setIssueDetails(response.data);
       } catch (error) {

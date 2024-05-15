@@ -19,7 +19,7 @@ const Sidebar = () => {
       try {
         const id = localStorage.getItem("userId");
         const response = await fetch(
-          `https://backendgit-1.onrender.com/repos/getAll/${id}`
+          `https://github-clone-be.vercel.app/repos/getAll/${id}`
         );
         const data = await response.json();
         setRepositories(data);

@@ -30,7 +30,7 @@ function CreateRepoDetail() {
 
     try {
       const response = await fetch(
-        "https://backendgit-1.onrender.com/repo/file",
+        "https://github-clone-be.vercel.app/repo/file",
         {
           method: "POST",
           body: formData,
@@ -46,7 +46,7 @@ function CreateRepoDetail() {
       console.log(data);
 
       const anotherAPIResponse = await fetch(
-        `https://backendgit-1.onrender.com/repos/filechange/${repositoryId}`,
+        `https://github-clone-be.vercel.app/repos/filechange/${repositoryId}`,
         {
           method: "POST",
           body: JSON.stringify({ content: data.fileUrl }),

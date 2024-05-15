@@ -20,7 +20,7 @@ const Feed = () => {
     console.log(repoName);
     try {
       const response = await axios.post(
-        "https://backendgit-1.onrender.com/repos/repoid",
+        "https://github-clone-be.vercel.app/repos/repoid",
         {
           repositoryName: repoName,
         }
@@ -43,7 +43,7 @@ const Feed = () => {
       try {
         const id = localStorage.getItem("userId");
         const response = await fetch(
-          `https://backendgit-1.onrender.com/repos/getAll/${id}`
+          `https://github-clone-be.vercel.app/repos/getAll/${id}`
         );
         const data = await response.json();
         setRepositories(data);

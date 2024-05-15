@@ -17,7 +17,7 @@ function NotificationPage() {
     const fetchIssues = async () => {
       try {
         const response = await axios.get(
-          `https://backendgit-1.onrender.com/repo/issues/user/${userID}`
+          `https://github-clone-be.vercel.app/repo/issues/user/${userID}`
         );
         setIssues(response.data);
       } catch (error) {
@@ -27,7 +27,7 @@ function NotificationPage() {
 
     fetchIssues();
 
-    const socket = io("https://backendgit-1.onrender.com");
+    const socket = io("https://github-clone-be.vercel.app");
 
     socket.on("connect", () => {
       socket.emit("joinRoom", userID);

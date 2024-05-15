@@ -20,7 +20,7 @@ function IssueView() {
     const fetchIssues = async () => {
       try {
         const response = await fetch(
-          `https://backendgit-1.onrender.com/repo/issues/${repositoryId}`
+          `https://github-clone-be.vercel.app/repo/issues/${repositoryId}`
         );
         const data = await response.json();
         setIssues(data);

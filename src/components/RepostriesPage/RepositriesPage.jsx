@@ -30,7 +30,7 @@ function RepositriesPage() {
       try {
         const id = localStorage.getItem("userId");
         const response = await axios.get(
-          `https://backendgit-1.onrender.com/repos/getAll/${id}`
+          `https://github-clone-be.vercel.app/repos/getAll/${id}`
         );
         setRepos(response.data); // Set the fetched repositories
       } catch (error) {
@@ -43,7 +43,7 @@ function RepositriesPage() {
       if (userId) {
         try {
           const response = await axios.get(
-            `https://backendgit-1.onrender.com/users/${userId}`
+            `https://github-clone-be.vercel.app/users/${userId}`
           );
           setUserDetails(response.data);
         } catch (error) {

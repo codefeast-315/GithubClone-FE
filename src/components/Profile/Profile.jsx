@@ -26,7 +26,7 @@ function Profile() {
       try {
         const id = localStorage.getItem("userId");
         const response = await axios.get(
-          `https://backendgit-1.onrender.com/repos/getAll/${id}`
+          `https://github-clone-be.vercel.app/repos/getAll/${id}`
         );
         setRepositories(response.data);
       } catch (error) {
@@ -39,7 +39,7 @@ function Profile() {
       if (userId) {
         try {
           const response = await axios.get(
-            `https://backendgit-1.onrender.com/users/${userId}`
+            `https://github-clone-be.vercel.app/users/${userId}`
           );
           setUserDetails(response.data);
         } catch (error) {
@@ -55,7 +55,7 @@ function Profile() {
   const fetchRepoId = async (repoName) => {
     try {
       const response = await axios.post(
-        "https://backendgit-1.onrender.com/repos/repoid",
+        "https://github-clone-be.vercel.app/repos/repoid",
         {
           repositoryName: repoName,
         }

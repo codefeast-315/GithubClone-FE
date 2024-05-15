@@ -74,7 +74,7 @@ const CreateRepo = ({ ownerName, RepoName }) => {
     };
     try {
       const response = await axios.post(
-        "https://backendgit-1.onrender.com/repos/create",
+        "https://github-clone-be.vercel.app/repos/create",
         formData
       );
       console.log(response.data);
